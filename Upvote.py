@@ -118,7 +118,7 @@ def get_count(days):
 
 # fuction to move through provided list of upvote days and 
 # calculate difference in every window
-def Upvotes(N, K, list_counts):
+def upvotes(N, K, list_counts):
     scores = []
     windows = N - K + 1
     for row in range(windows):
@@ -129,4 +129,4 @@ def Upvotes(N, K, list_counts):
         scores.append(get_count(treated_list))
     return scores
 
-print Upvotes(5,3,[1,2,3,1,1])
+print upvotes(5,3,[1,2,3,1,1])
